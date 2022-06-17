@@ -1,4 +1,6 @@
-from from_phonebook import pb
+from interface import phonebook
+
+pb = phonebook
 
 def print_pb(pb):
     for i in pb:
