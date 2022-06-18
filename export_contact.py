@@ -1,4 +1,4 @@
-def export_1_contact():
+def export_1_contact(pb):
     with open("phonebook copy.csv", mode="a", encoding='utf-8') as file:
         file_writer = csv.writer(file, delimiter = "|")
         file_writer.writerow(pb)
@@ -9,7 +9,7 @@ def export_1_contact():
 # 891...
 # вместо delimiter = "|" написать delimiter = "\r"
 
-def export_all_contacts():
+def export_all_contacts(pb):
     with open("phonebook copy.csv", mode="a", encoding='utf-8') as file:
         file_writer = csv.writer(file, delimiter = "|", lineterminator="\r")
         for i in pb:
